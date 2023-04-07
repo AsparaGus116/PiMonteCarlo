@@ -3,7 +3,7 @@ int tries = 0;
 double pi = 0.0;
 void setup()
 {
-  size(400,600);
+  size(400,460);
   surface.setTitle("PiMonteCarlo");
   background(55,55,55);
   fill(0,255,0);
@@ -17,7 +17,7 @@ void draw()
 {
   
   
-  for(int i = 0; i < 100000; i++)
+  for(int i = 0; i < 100; i++) //<>//
   {
      double x = random(4);
      double y = random(4);
@@ -38,5 +38,5 @@ void draw()
   textSize(64);
   fill(0,255,255);
   stroke(0,255,255);
-  text(nf((float)pi,1,10), 025,500);
+  text(nf((float)pi,1,10), 025,450);
 }
